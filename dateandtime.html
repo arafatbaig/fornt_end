@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<body>
+    <div class="container">
+        CURRENT TIME <span id="time"></span>
+    </div>
+    <script>
+        let dateandtime= new Date();
+        console.log(dateandtime);
+
+        let datandti= new Date(0);
+        console.log(datandti);
+
+        let dtandtm= new Date(100000);
+        console.log(dtandtm);
+
+        let futuredate= new Date("01-01-2025");
+        console.log(futuredate);
+
+        let newdate=new Date(2026,5,18,12,56,30,20);
+        console.log(newdate);
+
+        let yr= newdate.getFullYear();
+        console.log(yr);
+
+        let dat = newdate.getDate();
+        console.log(dat);
+
+        let hr= newdate.getHours();
+        console.log(hr);
+
+        let min= newdate.getMinutes();
+        console.log(min);
+
+        let sec= newdate.getMinutes();
+        console.log(sec);
+
+        let milisec= newdate.getMilliseconds();
+        console.log(milisec);
+
+        newdate.setDate(32);//this autocorrecrt to month end aumatically next month
+        newdate.setHours(10);
+        newdate.setMinutes(36);
+        newdate.setSeconds(10);
+        console.log(newdate);
+
+        setInterval(mywatch,1000);
+        function mywatch(){
+            time.innerHTML= new Date;
+        }
+    </script>
+</body>
+</html>

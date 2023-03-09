@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+    <script>
+        function greet(name){
+            console.log("hello world "+ name);
+        }
+        setTimeout(greet, 5000 , "adnan");//do not type paranthesis because that is reason it is not executed
+        
+
+        timeout=setTimeout(greet, 5000 , "adnan");
+        console.log(timeout);
+    </script>
+</body>
+</html>
