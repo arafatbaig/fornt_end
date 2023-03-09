@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigating the DOM</title>
+</head>
+<body>
+    <div id="main" class="container"></div>
+        <ul id="nav">
+            <li>mohammad</li>
+            <li>adnan</li>
+            <li>shaikh</li>
+            <li>hi</li>
+        </ul>
+    <div class ="container">
+        another container
+        <ul>
+            <li>hi</li>
+            <li>hello</li>
+            <li>bye</li>
+        </ul>
+    </div>
+    <script>
+        let cheking=document.getElementById("nav");
+        console.log(cheking);
+
+        let containers=document.getElementById('container')
+        console.log(containers)
+    </script>
+</body>
+</html>
