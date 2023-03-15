@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER ALERT</title>
+</head>
+
+<body>
+    <script>
+        let weather = (today) => {
+            if (today == 'rain') {
+                console.log('its rainny');
+            }
+
+            else if (today == "sunny") {
+                console.log('its sunny')
+            }
+            else if (today == 'thunderstorm'){
+                console.log('its thunderstorm')
+            }
+            else {
+                console.log('you entered wrong')
+            }
+
+        }
+        let itsday='sunny';
+        weather(itsday);
+    </script>
+</body>
+
+</html>
