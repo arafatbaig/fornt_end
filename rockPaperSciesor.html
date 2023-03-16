@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <div class="cont">
+        WELCOME TO ROCK PAPER SCISSOR
+    </div>
+    <script>
+        // game = (gameTurn) => {
+        //     let C = computer();
+        //     let U = user();
+        //     console.log(C);
+        //     console.log(U);
+        // }
+        function computer(){
+            let all = ['rock', 'paper', 'scissor'];
+            let startWith = Math.floor(Math.random() * all.length);
+            let computerChoose=all[startWith];
+            return computerChoose;
+        };
+
+        function user(){
+            let userWith = prompt('choose\nrock, paper or sciessor');
+            return userWith;
+
+        }
+        function game(){
+            let computerchoice=computer();;
+
+            if (computerchoice==userChoice){
+                console.log('draw');
+            }
+            else if (computerchoice=='rock' && userChoice=='scissor'){
+                console.log('you loose');
+            }
+            else if (computerchoice=='rock' && userChoice=='paper'){
+                console.log('you win');}
+            else if (computerchoice=='scissor' &&  userChoice=='rock'){
+                console.log('you win')
+            }
+            else if (computerchoice=='scissor' && userChoice=='paper'){
+                console.log('you loose');}
+            else if (computerchoice=='paper' && userChoice=='scissor'){
+                console.log('you loose');}
+            else if (computerchoice=='paper' && userChoice=='rock'){
+                console.log('you loose');
+        }}
+        let userChoice=user();
+        game(userChoice);
+    </script>
+</body>
+
+</html>
