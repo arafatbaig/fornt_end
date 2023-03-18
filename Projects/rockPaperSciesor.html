@@ -31,8 +31,11 @@
             return userWith;
 
         }
-        function game(){
-            let computerchoice=computer();;
+        function game(userChoice){
+            let computerchoice=computer();
+
+            console.log(`computer choose ${computerchoice}`);
+            console.log(`you choose ${userChoice}`);
 
             if (computerchoice==userChoice){
                 console.log('draw');
@@ -51,7 +54,8 @@
                 console.log('you loose');}
             else if (computerchoice=='paper' && userChoice=='rock'){
                 console.log('you loose');
-        }}
+            }
+        }
         let userChoice=user();
         game(userChoice);
     </script>
