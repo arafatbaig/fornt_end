@@ -1,3 +1,4 @@
+windows.prompt("TYPE NUMBER HERE");
 function calculateTotal() {
   let billAmount = Number(document.getElementById("bill").value);
   let tip = Number(document.getElementById("tip").value);
